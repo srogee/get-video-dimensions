@@ -6,6 +6,7 @@
   "license": "MIT",
   "repository": "mgmtio/get-video-dimensions",
   "dependencies": {
+    "@ffprobe-installer/ffprobe": "^1.1.0",
     "mz": "^2.1.0"
   },
   "devDependencies": {

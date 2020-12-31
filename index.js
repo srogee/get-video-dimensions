@@ -1,9 +1,10 @@
 
 var exec = require('mz/child_process').execFile;
 var assert = require('assert');
+var ffprobeInstaller = require('@ffprobe-installer/ffprobe');
 
 module.exports = function (filename) {
-  return exec('ffprobe', [
+  return exec(ffprobeInstaller.path, [
     '-v', 'error',
     '-of', 'flat=s=_',
     '-select_streams', 'v:0',
